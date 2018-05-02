@@ -1,32 +1,20 @@
-[CmdletBinding()]
-     Param (
-        [Parameter(Mandatory=$true, Position=0)]
-        [ValidateNotNullOrEmpty()]
-		[string]$user,
-		[Parameter(Mandatory=$true, Position=1)]
-		[string]$Password,
-		[Parameter(Mandatory=$true, Position=2)]
-		[string]$fullname,
-		[Parameter(Mandatory=$true, Position=3)]
-		[string]$dis
-	)
-
-
 $gui1 = '==================================='
 $gui2 = '||       User creation           ||'
 $gui4 = '||       User deleting           ||'
 $gui3 = '==================================='
 $spacer = ' '
 $out = .\netuseroutput.bat
+$user = 'student'
+$password = 'Student123'
+$dis = 'The default Student User Account'
+$fullname = 'Student' 
 
 Write-Host "$gui1"
 Write-Host "$gui4"
 Write-Host "$gui3"
 Write-Host "$spacer"
 
-if ($out -like '*student*') {
 net user $user /delete
-}
 
 Write-Host "$gui1"
 Write-Host "$gui2"
