@@ -26,8 +26,5 @@ Write-Host "$eeheelp"
 
 write-host "Deleting Files From: $files !"
 Write-Host "$spacer"
-Write-Host "$spacer"
-Write-Host "$spacer"
-Write-Host "$spacer"
 
 Get-ChildItem -Path $files -Recurse | Remove-Item -force -recurse
