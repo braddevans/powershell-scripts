@@ -4,10 +4,14 @@ $gui4 = '||       User deleting           ||'
 $gui3 = '==================================='
 $spacer = ' '
 $out = .\netuseroutput.bat
+
+#remove this lof if lines if want to create custom users
 $user = 'student'
 $password = 'Student123'
 $dis = 'The default Student User Account'
 $fullname = 'Student' 
+#end of lines ;/
+
 
 Write-Host "$gui1"
 Write-Host "$gui4"
