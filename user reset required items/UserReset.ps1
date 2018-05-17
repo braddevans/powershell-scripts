@@ -1,3 +1,17 @@
+[CmdletBinding()]
+     Param (
+        [Parameter(Mandatory=$true, Position=0)]
+        [ValidateNotNullOrEmpty()]
+		[string]$user,
+		[Parameter(Mandatory=$true, Position=1)]
+		[string]$Password,
+		[Parameter(Mandatory=$true, Position=2)]
+		[string]$fullname,
+		[Parameter(Mandatory=$true, Position=3)]
+		[string]$dis
+	)
+
+
 $gui1 = '==================================='
 $gui2 = '||       User creation           ||'
 $gui4 = '||       User deleting           ||'
@@ -6,10 +20,12 @@ $spacer = ' '
 $out = .\netuseroutput.bat
 
 #remove this lof if lines if want to create custom users
-$user = 'student'
-$password = 'Student123'
-$dis = 'The default Student User Account'
-$fullname = 'Student' 
+
+##$user = 'student'
+##$password = 'Student123'
+##$dis = 'The default Student User Account'
+##$fullname = 'Student' 
+
 #end of lines ;/
 
 

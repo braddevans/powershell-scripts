@@ -1,0 +1,13 @@
+[CmdletBinding()]
+     Param (
+        [Parameter(Mandatory=$true, Position=0)]
+        [ValidateNotNullOrEmpty()]
+		[string]$user,
+		[Parameter(Mandatory=$true, Position=1)]
+		[string]$Password,
+		[Parameter(Mandatory=$true, Position=2)]
+		[string]$fullname,
+		[Parameter(Mandatory=$true, Position=3)]
+		[string]$dis
+	)
+
