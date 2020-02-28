@@ -1,5 +1,5 @@
 Get-ChildItem */* | 
-	where {$_.name -eq "build.gradle"} | 
+	where {$_.name -eq "README.md"} | 
 	foreach { 
 		cd $_.DirectoryName; 
 		echo "switched to project: "$_.DirectoryName; 
